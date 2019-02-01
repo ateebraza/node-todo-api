@@ -7,20 +7,20 @@ if(err){
 
 }
 console.log('Connected to MongoDb Server!');
-db.collection('Todos').find({completed:true}).toArray().then((docs)=>{
-    console.log('Todos');
-    console.log(JSON.stringify(docs, undefined, 2));
+// db.collection('Todos').find({completed:true}).toArray().then((docs)=>{
+//     console.log('Todos');
+//     console.log(JSON.stringify(docs, undefined, 2));
 
-},(err)=>{
-    console.log('Unable to fetch',err);
-});
-console.log('Connected to MongoDb Server!');
-db.collection('Todos').find().count().then((count)=>{
-    console.log(`Todos count: ${count}`);
+// },(err)=>{
+//     console.log('Unable to fetch',err);
+// });
+// console.log('Connected to MongoDb Server!');
+// db.collection('Todos').find().count().then((count)=>{
+//     console.log(`Todos count: ${count}`);
     
 
-},(err)=>{
-    console.log('Unable to fetch',err);
-});
+// },(err)=>{
+//     console.log('Unable to fetch',err);
+// });
 //db.close();
  });
